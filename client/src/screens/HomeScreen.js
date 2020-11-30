@@ -20,7 +20,7 @@ const HomeScreen = () => {
         <>
             <h1>Latest Products</h1>
             {
-                loading ? <Loader /> : error ? <Message variant="danger">{{error}}</Message> : 
+                loading ? <Loader /> : error ? <Message variant="danger"></Message> : 
                 <Row>
                     {
                         products.map(product => (
