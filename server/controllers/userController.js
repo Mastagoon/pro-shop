@@ -34,6 +34,7 @@ export const registerUser = asyncHandler(async (req,res) => {
     const userExists = await User.findOne({ email })
     if(userExists) {
         res.status(400)
+        console.log("throwing email exists error.")
         throw new Error(`this email address is already used.`)
     }
     const user = await User.create({
