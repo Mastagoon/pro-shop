@@ -19,3 +19,16 @@ h2 {
 .star {
     color:#DAA520;
 }
+
+.hidden {
+    display: none;
+}
+
+.success-toast {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    background-color: #4CAF50 !important;
+    color: #fff;
+    border-radius: 20px;
+}
